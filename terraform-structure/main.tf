@@ -1,26 +1,22 @@
 terraform {
-    ##vão diversas configs básicas do terraform
-}
+    required_version = "1.1.0"
+    #required_version = ">= 1.0.0"
+    #required_version = ">= 1.0.0, < 1.2.0"
+    #required_version = "~> 1.0.0" funciona da 1.0.0 até 1.1.n
 
-provider "aws" {
-    ##nome do provider utilizado:
-}
+    required_providers {
+      aws = {
+        version = "3.50.0"
+        source = "hashicorp/aws"
+      }
+      azurerm = {
+        version = "2.70.0"
+        source = "hashicorp/azurerm"
+      }
+    }
 
-resource "aws_instance" "name" {
-    ##seta o nome do resource que quer criar
-    ##segunda aspas: nome que quisermos, nome interno dentro da config do terraform
-}
-
-data "aws_ami" "name" {
-    ##primeiras aspas: tipo de data => busca infos de uma imagem aws 
-    ##segunda aspas: qualquer nome para referenciar essa informação
-}
-
-module "vpc" {
-    ##referencia tanto o modulo que a gente cria
-    ##referencia o módulo do registro do terraform
-}
-
-variable "ip" {
-    ##declaração de variavel que a gente usa dentro da config do terraform
+    backend "s3" {
+        #guarda state do terraform de forma remota, no s3 bucket
+        #essa parte vai estar as configs da state
+    }
 }
