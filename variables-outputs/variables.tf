@@ -14,6 +14,7 @@ variable "account_tier" {
 variable "account_replication_type" {
     description = "Tipo de replicação de dados da Storage Account"
     type = string
-    default = "value"
+    default = "LRS"
+    sensitive = true ##terraform nao mostra o valor dessa variável quando faz plan
 }
 

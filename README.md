@@ -17,3 +17,4 @@ Opções para declarar variável
 Linha de Comando para variáveis
 
 $ export TF_VAR_location="Brazil South"
+$ terraform plan -var='location-Brasil South'
