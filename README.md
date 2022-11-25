@@ -18,3 +18,9 @@ Linha de Comando para variáveis
 
 $ export TF_VAR_location="Brazil South"
 $ terraform plan -var='location-Brasil South'
+
+Referenciar atributos de outros blocos
+
+Local Values
+Recurso terraform permite dar um nome a uma determinada função
+
