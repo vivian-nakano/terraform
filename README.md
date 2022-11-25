@@ -13,3 +13,7 @@ Opções para declarar variável
 - Variable on the command line
 - Variable Defitions (.tfvars) (tfvars.json)
 - Informar terraform como variável de ambiente (utiliza export TF_VAR_nomevariavel=valorvariavel)
+
+Linha de Comando para variáveis
+
+$ export TF_VAR_location="Brazil South"
