@@ -24,3 +24,6 @@ Referenciar atributos de outros blocos
 Local Values
 Recurso terraform permite dar um nome a uma determinada função
 
+Output values
+Enviar para fora do terraform alguma informação que criamos dentro do código
+
