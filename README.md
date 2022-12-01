@@ -76,6 +76,7 @@ Ou usa source (copiar arquivo da tua máquina para maq remota) OU content (escre
 # MÓDULOS
 Basicamente módulos são conjunto de códigos pra construir determinados recursos, que podemos reaproveitar.
 Ex: conjunto de código que constrói uma VPC, salva essa pasta/diretório/módulo, e pode chamar essa pasta em outras configurações.
-
-- Locais 
+https://registry.terraform.io/browse/modules
+Coleção de arquivos tf. 
+- Locais
 - Remotos
