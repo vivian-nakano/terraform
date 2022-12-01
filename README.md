@@ -72,3 +72,10 @@ Além do bloco provisioner, precisa de um bloco de conexão (connection) para re
 3) Provisioner File
 Forma de copiar um arquivo para dentro da máquina remota. Ou copia arquivo inteiramente ou escreve algo para dentro do arquivo que nao existia dentro da máquina remota. 
 Ou usa source (copiar arquivo da tua máquina para maq remota) OU content (escrever alguma info/conteúdo dentro de um arquivo na sua máquina remota)
+
+# MÓDULOS
+Basicamente módulos são conjunto de códigos pra construir determinados recursos, que podemos reaproveitar.
+Ex: conjunto de código que constrói uma VPC, salva essa pasta/diretório/módulo, e pode chamar essa pasta em outras configurações.
+
+- Locais 
+- Remotos
