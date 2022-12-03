@@ -97,3 +97,10 @@ Terraform registry possui módulos verificados pela HASHICORP e publicados pela 
 
 O bloco do módulo sempre tem opção source, recomendado utilizar a opção version, meta-arguments/outputs. 
 
+## Meta Arguments
+
+Argumentos especiais e podem ser utilizados em blocos de recurso ou blocos de módulos.
+
+1. Depends_on
+Existem alguns recursos que não funcionam se não for criado na ordem correta, não consegue pegar a referência.
+Utilizar o depends_on em um determinado bloco de recurso que depende de outro.
