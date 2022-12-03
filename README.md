@@ -1,9 +1,12 @@
 # Terraform Concepts
 
 Ignore big file inside .terraform/
-git filter-branch -f --index-filter 'git rm --cached -r --ignore-unmatch .terraform/'
 
-## Variables: 
+```
+$ git filter-branch -f --index-filter 'git rm --cached -r --ignore-unmatch .terraform/'
+```
+
+## Variables
 - Temos que declarar no bloco
 - Aceitar tipo de argumentos: default, type, description, etc.
 - Tipo da variável: string, bool, number, etc.
@@ -16,8 +19,14 @@ Opções para declarar variável
 
 Linha de Comando para variáveis
 
+```
 $ export TF_VAR_location="Brazil South"
+```
+
+```
 $ terraform plan -var='location-Brasil South'
+```
+
 
 Referenciar atributos de outros blocos
 
