@@ -77,6 +77,11 @@ Ou usa source (copiar arquivo da tua máquina para maq remota) OU content (escre
 Basicamente módulos são conjunto de códigos pra construir determinados recursos, que podemos reaproveitar.
 Ex: conjunto de código que constrói uma VPC, salva essa pasta/diretório/módulo, e pode chamar essa pasta em outras configurações.
 https://registry.terraform.io/browse/modules
-Coleção de arquivos tf. 
-- Locais
+Coleção de arquivos tf que servem pra construir múltiplos recursos. Empacotar e reutilizar a configuração de recursos dentro do terraform.
+- Locais 
 - Remotos
+
+Considera que o diretório padrão é o ROOT MODULE. 
+Child modules: armazenados localmente no mesmo lugar que o root modules.
+Published modules: utilizar módulos publicados e utilizar de forma remota.
+Terraform registry possui módulos verificados pela HASHICORP e publicados pela própria provider. Usuários também fazem upload do módulo (alguns podem não ser confiáveis).
