@@ -1,9 +1,9 @@
-##Terraform studies
+# Terraform Concepts
 
 Ignore big file inside .terraform/
 git filter-branch -f --index-filter 'git rm --cached -r --ignore-unmatch .terraform/'
 
-Variables: 
+## Variables: 
 - Temos que declarar no bloco
 - Aceitar tipo de argumentos: default, type, description, etc.
 - Tipo da variável: string, bool, number, etc.
@@ -21,22 +21,22 @@ $ terraform plan -var='location-Brasil South'
 
 Referenciar atributos de outros blocos
 
-Local Values
+## Local Values
 Recurso terraform permite dar um nome a uma determinada função
 
-Output values
+## Output values
 Enviar para fora do terraform alguma informação que criamos dentro do código
 $ terraform output storage_account_id
 $ terraform output
 
-Local State
+## Local State
 - Arquivo que o terraform cria automaticamente onde armazena infos de todos os recursos que ele geriu.
 - A partir dessas infos, o terraform se torna idempotente. Aplica a mesma config varias vezes (apply), que ele não cria repetidas vezes o mesmo recurso.
 - Graças a esse arquivo que o terraform é capaz de fazer isso.
 
 State Lock Info: arquivo é criado após apply. Com state o tf sabe o que foi criado ou não. Esse arquivo impede que outros usuários utilizem/mexam no state ao mesmo tempo.
 
-Terraform Remote State
+## Terraform Remote State
 Armazenar remotamente o arquivo state do terraform. Várias opções, mas no curso é utilizar bucket S3 na AWS ou storage account.
 By default, remote state é guardado localmente (terraform.tfstate). Mas podemos guardar remotamente.
 https://developer.hashicorp.com/terraform/language/settings/backends/configuration
@@ -48,12 +48,12 @@ Quando salvamos remotamente o tfstate e queremos usar alguma info daquele state.
 
 Criar Virtual Machine na AWS
 
-Terraform Import
+## Terraform Import
 
 Consegue pegar um projeto já criado e colocar em terraform.
 $ terraform import aws_s3_bucket.bucket_terraform_import nome-bucket
 
-Provisioners
+## Provisioners
 
 Bloco/nested block que vai dentro de bloco de recurso.
 "Provisioners are a Last Resort" >> utilizar em último caso.
@@ -73,7 +73,7 @@ Além do bloco provisioner, precisa de um bloco de conexão (connection) para re
 Forma de copiar um arquivo para dentro da máquina remota. Ou copia arquivo inteiramente ou escreve algo para dentro do arquivo que nao existia dentro da máquina remota. 
 Ou usa source (copiar arquivo da tua máquina para maq remota) OU content (escrever alguma info/conteúdo dentro de um arquivo na sua máquina remota)
 
-# MÓDULOS
+## Módulos
 Basicamente módulos são conjunto de códigos pra construir determinados recursos, que podemos reaproveitar.
 Ex: conjunto de código que constrói uma VPC, salva essa pasta/diretório/módulo, e pode chamar essa pasta em outras configurações.
 https://registry.terraform.io/browse/modules
