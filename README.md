@@ -94,3 +94,6 @@ Considera que o diretório padrão é o ROOT MODULE.
 Child modules: armazenados localmente no mesmo lugar que o root modules.
 Published modules: utilizar módulos publicados e utilizar de forma remota.
 Terraform registry possui módulos verificados pela HASHICORP e publicados pela própria provider. Usuários também fazem upload do módulo (alguns podem não ser confiáveis).
+
+O bloco do módulo sempre tem opção source, recomendado utilizar a opção version, meta-arguments/outputs. 
+
