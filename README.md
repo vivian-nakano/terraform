@@ -113,3 +113,7 @@ Não é possível usar count e for each junto.
 Servem para criar múltiplas cópias de um recurso utilizando apenas um bloco.
 MAP OU CONJUNTO DE STRINGS.
 
+4. Provider
+Não é bloco de provider, mas tem relação
+Permite que nós setamos no código mais de um provider. Ou fazer deploy em diferentes regiões (com mesmo código).
+
