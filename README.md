@@ -108,3 +108,8 @@ Utilizar o depends_on em um determinado bloco de recurso que depende de outro.
 2. Count
 Diz pro terraform quantas cópias daquele bloco/recurso a gente quer que crie.
 
+3. For_each
+Não é possível usar count e for each junto.
+Servem para criar múltiplas cópias de um recurso utilizando apenas um bloco.
+MAP OU CONJUNTO DE STRINGS.
+
