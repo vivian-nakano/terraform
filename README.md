@@ -117,3 +117,10 @@ MAP OU CONJUNTO DE STRINGS.
 Não é bloco de provider, mas tem relação
 Permite que nós setamos no código mais de um provider. Ou fazer deploy em diferentes regiões (com mesmo código).
 
+5. Lifecycle
+Consta no bloco de resource, mas no bloco de módules não.
+Nested block, tem opções proprias dentro dele. 
+* create_before_destroy = True (primeiro constroi um novo e depois destrói o antigo)
+* prevent_destroy = True ()
+* ignore_changes = list of attributes
+
