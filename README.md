@@ -124,3 +124,9 @@ Nested block, tem opções proprias dentro dele.
 * prevent_destroy = True ()
 * ignore_changes = list of attributes
 
+## Funções e Expressões
+
+1. Conditional Expressions
+Utiliza valor de expressao boleana para selecionar valores.
+condition ? true_val : false_val
+
