@@ -134,3 +134,10 @@ condition ? true_val : false_val
 [for s in var.list : upper(s)]
 
 "Para um valor em uma lista de valores, faça alguma coisa"
+
+3. Splat Expressions
+Forma mais concisa de fazer "for expression"
+
+Na expressao for expression: [for o in var.list : o.id]
+
+O mesmo para splat expression: var.list[*].id
