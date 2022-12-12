@@ -20,3 +20,6 @@ resource "aws_vpc" {
         "Name" = "vpc-terraform"
     }
 }
+
+## No exemplo ele set a variável via linha de comando (CLI)
+## export TF_VAR_environment=develop // export TF_VAR_environment=develop
