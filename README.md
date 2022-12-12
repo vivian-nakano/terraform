@@ -130,3 +130,7 @@ Nested block, tem opções proprias dentro dele.
 Utiliza valor de expressao boleana para selecionar valores.
 condition ? true_val : false_val
 
+2. for Expressions
+[for s in var.list : upper(s)]
+
+"Para um valor em uma lista de valores, faça alguma coisa"
