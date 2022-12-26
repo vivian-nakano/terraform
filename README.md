@@ -141,3 +141,6 @@ Forma mais concisa de fazer "for expression"
 Na expressao for expression: [for o in var.list : o.id]
 
 O mesmo para splat expression: var.list[*].id
+
+4. Dynamic block
+Parece um for_expression, mas consegue produzir nested blocks que podem ser usados em um determinado recurso.
